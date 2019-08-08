@@ -1,0 +1,7 @@
+# Whitelist the desired files
+!docker-compose.yml
+!Dockerfile
+!docker-run.sh
+!standalone.xml
+!README.md
+*/*
