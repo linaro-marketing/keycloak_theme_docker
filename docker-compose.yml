@@ -16,6 +16,8 @@ services:
         MYSQL_PASSWORD: password
   keycloak:
       image: linaro_keycloak:latest
+      volumes:
+        - ../keycloak_theme/:/opt/jboss/keycloak/themes/linaro/
       environment:
         DB_VENDOR: MYSQL
         DB_ADDR: mysql
